@@ -1,3 +1,9 @@
 
+<?php
+	$id = 1;
+	if(isset($fatch)){
+		$id = $fatch;
+	}
+?>
 
-<button><a href="{{route('question.show')}}">Click Me</a></button>
+<button><a href="{{route('question.show',$id)}}">Click Me</a></button>

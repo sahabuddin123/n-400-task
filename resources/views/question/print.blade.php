@@ -403,6 +403,9 @@ crossorigin="anonymous"></script>
 
 $(document).ready(function(){
 
+
+
+
     var progressBar = $("#progressBar");
     var progress = 0;
     // External Button Events
@@ -511,15 +514,21 @@ $(document).ready(function(){
 		}
 	});
 		$(".five-three").on('click',function(){
-		var thisProperty = $(this);
-		var opn = $(".five-three-none");
-		if(thisProperty.prop('checked')){
-			opn.show();
-		}
-		else{
-			opn.hide();
-		}
-	});
+			var thisProperty = $(this);
+			var opn = $(".five-three-none");
+			if(thisProperty.prop('checked')){
+				opn.show();
+			}
+			else{
+				opn.hide();
+			}
+		});
+
+		$("#step-1").show();
+    	$("#step-2").show();
+    	$("#step-3").show();
+    	$("#step-4").show();
+    	window.print();
 });
 </script>
 <script>
