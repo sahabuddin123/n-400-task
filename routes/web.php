@@ -10,9 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/home', function () {
     return view('question.task');
 });
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/print', function () {
+    return view('question.print');
 });
+
+  Route::post('/store', 'Question\QuestionController@store')->name('question.store');
+  //Route::get('/show/{id}', 'Question\QuestionController@show')->name('question.show');
+  Route::get('/show', 'Question\QuestionController@show')->name('question.show');

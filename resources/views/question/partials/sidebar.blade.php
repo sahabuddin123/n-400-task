@@ -12,5 +12,10 @@
                 <span class="app-menu__label">Dashboard</span>
             </a>
         </li>
+        <li>
+            <a class="app-menu__item" href=""><i class="app-menu__icon fa fa-cogs"></i>
+                <span class="app-menu__label">Settings</span>
+            </a>
+        </li>
     </ul>
 </aside>

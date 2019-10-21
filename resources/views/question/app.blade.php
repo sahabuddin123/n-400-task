@@ -20,10 +20,12 @@
      }
     </style> -->
 </head>
-<body>
-<div class="container">
-@yield('content')
-</div>
+<body class="app sidebar-mini rtl">
+    @include('question.partials.header')
+    @include('question.partials.sidebar')
+    <main class="app-content" id="app">
+        @yield('content')
+    </main>
     <script src="{{ asset('backend/js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('backend/js/popper.min.js') }}"></script>
     <script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
